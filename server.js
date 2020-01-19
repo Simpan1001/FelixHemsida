@@ -13,5 +13,5 @@ app.get('/sida2', function(req, res) {
 });
 
 let server = app.listen(port, function() {
-    console.log(`The server is up and tunning on port ${port}`);
+    console.log(`The server is up and running on port ${port}`);
 });
