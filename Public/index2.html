@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -35,95 +39,133 @@
     </nav>
 
     <div class="container-fluid">
-        <h3 class="centerAlignment">Här kan ni hitta mer skoj.</h3>
+        <h3 class="centerAlignment PGText">Här kan ni hitta mer skoj.</h3>
         <br>
     </div>
 
+    <!-- Ljudfilerna börjar här -->
+
     <div class="container-fluid">
-        <div class="col-sm-4 centerAlignment">
-            <audio controls style="color:blue">
-                <source src="./media/ljud/HåkarnBråkarn.wav" type="audio/wav">
-                Det verkar som om din webbläsare inte kan hantera dessa ljudfiler...
-            </audio>
-            <p class="centerAlignment">Håkarn Bråkarn</p>
+        <div class="col-sm-4">
+            <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
+                <audio id="håkarnBråkarn">
+                    <source src="/media/ljud/håkarnBråkarn.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <button type="button" class="btn-lg btn-success" onclick="playAudio('håkarnBråkarn')">Play</button>
+                <button type="button" class="btn-lg btn-danger" onclick="loadAudio('håkarnBråkarn')">Pause</button>
+                <p class="centerAlignment audioText">Håkarn Bråkarn</p>
+            </div>
         </div>
 
-        <div class="col-sm-4 centerAlignment">
-            <audio controls style="color:blue">
-                <source src="./media/ljud/AAA.wav" type="audio/wav">
-                Det verkar som om din webbläsare inte kan hantera dessa ljudfiler...
-            </audio>
-            <p class="centerAlignment">HAAAAAAAAH!!!!</p>
+        <div class="col-sm-4">
+            <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
+                <audio id="AAA">
+                    <source src="/media/ljud/AAA.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <button type="button" class="btn-lg btn-success" onclick="playAudio('AAA')">Play</button>
+                <button type="button" class="btn-lg btn-danger" onclick="loadAudio('AAA')">Pause</button>
+                <p class="centerAlignment audioText">HAAAAAAAA!!!</p>
+            </div>
         </div>
 
-        <div class="col-sm-4 centerAlignment">
-            <audio controls style="color:blue">
-                <source src="./media/ljud/Yay.wav" type="audio/wav">
-                Det verkar som om din webbläsare inte kan hantera dessa ljudfiler...
-            </audio>
-            <p class="centerAlignment">Jej!</p>
+        <div class="col-sm-4">
+            <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
+                <audio id="Yay">
+                    <source src="/media/ljud/Yay.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <button type="button" class="btn-lg btn-success" onclick="playAudio('Yay')">Play</button>
+                <button type="button" class="btn-lg btn-danger" onclick="loadAudio('Yay')">Pause</button>
+                <p class="centerAlignment audioText">Yay!</p>
+            </div>
         </div>
     </div>
 
-    <div>
-        <br>
-    </div>>
+    
 
     <div class="container-fluid">
-        <div class="col-sm-4 centerAlignment">
-            <audio controls style="color:blue">
-                <source src="./media/ljud/DJH.wav" type="audio/wav">
-                Det verkar som om din webbläsare inte kan hantera dessa ljudfiler...
-            </audio>
-            <p class="centerAlignment">DJ Håkarn</p>
+        <div class="col-sm-4">
+            <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
+                <audio id="DJH">
+                    <source src="/media/ljud/DJH.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <button type="button" class="btn-lg btn-success" onclick="playAudio('DJH')">Play</button>
+                <button type="button" class="btn-lg btn-danger" onclick="loadAudio('DJH')">Pause</button>
+                <p class="centerAlignment audioText">DJH</p>
+            </div>
         </div>
 
-        <div class="col-sm-4 centerAlignment">
-            <audio controls style="color:blue">
-                <source src="./media/ljud/RumpR.wav" type="audio/wav">
-                Det verkar som om din webbläsare inte kan hantera dessa ljudfiler...
-            </audio>
-            <p class="centerAlignment">Rumpor</p>
+        <div class="col-sm-4">
+            <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
+                <audio id="Rumpr">
+                    <source src="/media/ljud/Rumpr.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <button type="button" class="btn-lg btn-success" onclick="playAudio('Rumpr')">Play</button>
+                <button type="button" class="btn-lg btn-danger" onclick="loadAudio('Rumpr')">Pause</button>
+                <p class="centerAlignment audioText">Rumpr</p>
+            </div>
         </div>
 
-        <div class="col-sm-4 centerAlignment">
-            <audio controls style="color:blue">
-                <source src="./media/ljud/StämHåkan.wav" type="audio/wav">
-                Det verkar som om din webbläsare inte kan hantera dessa ljudfiler...
-            </audio>
-            <p class="centerAlignment">Stäm Håkarn</p>
+        <div class="col-sm-4">
+            <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
+                <audio id="StämHåkan">
+                    <source src="/media/ljud/StämHåkan.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <button type="button" class="btn-lg btn-success" onclick="playAudio('StämHåkan')">Play</button>
+                <button type="button" class="btn-lg btn-danger" onclick="loadAudio('StämHåkan')">Pause</button>
+                <p class="centerAlignment audioText">Stäm Håkarn</p>
+            </div>
         </div>
     </div>
 
-    <div>
-        <br>
-    </div>>
+    
 
     <div class="container-fluid">
-        <div class="col-sm-4 centerAlignment">
-            <audio controls style="color:blue">
-                <source src="./media/ljud/EnGraf.wav" type="audio/wav">
-                Det verkar som om din webbläsare inte kan hantera dessa ljudfiler...
-            </audio>
-            <p class="centerAlignment">En graf</p>
+        <div class="col-sm-4">
+            <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
+                <audio id="EnGraf">
+                    <source src="/media/ljud/EnGraf.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <button type="button" class="btn-lg btn-success" onclick="playAudio('EnGraf')">Play</button>
+                <button type="button" class="btn-lg btn-danger" onclick="loadAudio('EnGraf')">Pause</button>
+                <p class="centerAlignment audioText">EnGraf</p>
+            </div>
         </div>
 
-        <div class="col-sm-4 centerAlignment">
-            <audio controls style="color:blue">
-                <source src="./media/ljud/VaGöru.wav" type="audio/wav">
-                Det verkar som om din webbläsare inte kan hantera dessa ljudfiler...
-            </audio>
-            <p class="centerAlignment">VaGöru?</p>
+        <div class="col-sm-4">
+            <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
+                <audio id="VaGöru">
+                    <source src="/media/ljud/VaGöru.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <button type="button" class="btn-lg btn-success" onclick="playAudio('VaGöru')">Play</button>
+                <button type="button" class="btn-lg btn-danger" onclick="loadAudio('VaGöru')">Pause</button>
+                <p class="centerAlignment audioText">VaGöru?</p>
+            </div>
         </div>
 
-        <div class="col-sm-4 centerAlignment">
-            <audio controls style="color:blue">
-                <source src="./media/ljud/ThugLife.wav" type="audio/wav">
-                Det verkar som om din webbläsare inte kan hantera dessa ljudfiler...
-            </audio>
-            <p class="centerAlignment">:0_0:</p>
+        <div class="col-sm-4">
+            <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
+                <audio id="ThugLife">
+                    <source src="/media/ljud/ThugLife.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <button type="button" class="btn-lg btn-success" onclick="playAudio('ThugLife')">Play</button>
+                <button type="button" class="btn-lg btn-danger" onclick="loadAudio('ThugLife')">Pause</button>
+                <p class="centerAlignment audioText">:O_O:</p>
+            </div>
         </div>
     </div>
+
+    <script src="/playSounds2.js"></script>
+
+    <!-- Ljudfiler slutar här -->
 
     <footer>
         <div class="footerText centerAlignment">

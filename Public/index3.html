@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -36,33 +40,47 @@
     </nav>
 
     <div class="container-fluid">
-        <h3 class="centerAlignment">Här finns det låtar att lyssna på! Rocka fett nura!</h3>
+        <h3 class="centerAlignment PGText">Här finns det låtar att lyssna på! Rocka fett nura!</h3>
         <br>
     </div>
 
+    <!-- Låtarna börjar här -->
+
     <div class="container-fluid">
-        <div class="col-sm-4 centerAlignment">
-            <audio controls style="color:blue">
-                <source src="./media/ljud/WildSide.mp3" type="audio/mp3">
-                Det verkar som om din webbläsare inte kan hantera dessa ljudfiler...
-            </audio>
-            <p class="centerAlignment">Wild Side</p>
+        <div class="col-sm-4">
+            <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
+                <audio id="Wild">
+                    <source src="/media/ljud/WildSide.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <button type="button" class="btn-lg btn-success" onclick="playAudio('Wild')">Play</button>
+                <button type="button" class="btn-lg btn-danger" onclick="loadAudio('Wild')">Pause</button>
+                <p class="centerAlignment audioText">Wild Side</p>
+            </div>
+        </div>
+        
+        <div class="col-sm-4">
+            <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
+                <audio id="Danger">
+                    <source src="/media/ljud/DangerZone.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <button type="button" class="btn-lg btn-success" onclick="playAudio('Danger')">Play</button>
+                <button type="button" class="btn-lg btn-danger" onclick="loadAudio('Danger')">Pause</button>
+                <p class="centerAlignment audioText">Danger Zone</p>
+            </div>
         </div>
 
-        <div class="col-sm-4 centerAlignment">
-            <audio controls style="color:blue">
-                <source src="./media/ljud/DangerZone.mp3" type="audio/mp3">
-                Det verkar som om din webbläsare inte kan hantera dessa ljudfiler...
-            </audio>
-            <p class="centerAlignment">Danger Zone</p>
-        </div>
-
-        <div class="col-sm-4 centerAlignment">
-            <audio controls style="color:blue">
-                <source src="./media/ljud/Hobbits.mp3" type="audio/mp3">
-                Det verkar som om din webbläsare inte kan hantera dessa ljudfiler...
-            </audio>
-            <p class="centerAlignment">Taking the hobbits to Isengard</p>
+        <div class="col-sm-4">
+            <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
+                <audio id="Hobbits">
+                    <source src="/media/ljud/Hobbits.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <button type="button" class="btn-lg btn-success" onclick="playAudio('Hobbits')">Play</button>
+                <button type="button" class="btn-lg btn-danger" onclick="loadAudio('Hobbits')">Pause</button>
+                <p class="centerAlignment audioText">Taking the hobbits to Isengard</p>
+            </div>
         </div>
     </div>
 
@@ -71,22 +89,34 @@
     </div>
 
     <div class="container-fluid">
-        <div class="col-sm-6 centerAlignment">
-            <audio controls style="color:blue">
-                <source src="./media/ljud/NärFarfarVarUng.mp3" type="audio/mp3">
-                Det verkar som om din webbläsare inte kan hantera dessa ljudfiler...
-            </audio>
-            <p class="centerAlignment">När farfar var ung</p>
+        <div class="col-sm-6">
+            <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
+                <audio id="Farfar">
+                    <source src="/media/ljud/NärFarfarVarUng.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <button type="button" class="btn-lg btn-success" onclick="playAudio('Farfar')">Play</button>
+                <button type="button" class="btn-lg btn-danger" onclick="loadAudio('Farfar')">Pause</button>
+                <p class="centerAlignment audioText">När farfar var ung</p>
+            </div>
         </div>
 
-        <div class="col-sm-6 centerAlignment">
-            <audio controls style="color:blue">
-                <source src="./media/ljud/Månadsskifte.mp3" type="audio/mp3">
-                Det verkar som om din webbläsare inte kan hantera dessa ljudfiler...
-            </audio>
-            <p class="centerAlignment">Månadsskifte</p>
+        <div class="col-sm-6">
+            <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
+                <audio id="Månadsskifte">
+                    <source src="/media/ljud/Månadsskifte.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <button type="button" class="btn-lg btn-success" onclick="playAudio('Månadsskifte')">Play</button>
+                <button type="button" class="btn-lg btn-danger" onclick="loadAudio('Månadsskifte')">Pause</button>
+                <p class="centerAlignment audioText">Månadsskifte</p>
+            </div>
         </div>
     </div>
+
+    <script src="/playSounds3.js"></script>
+
+    <!-- Ljudfiler slutar här -->
 
     <footer>
         <div class="footerText centerAlignment">
