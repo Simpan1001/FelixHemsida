@@ -4,8 +4,30 @@ Hobbits = document.getElementById("Hobbits");
 Farfar = document.getElementById("Farfar");
 Månadsskifte = document.getElementById("Månadsskifte");
 
+ljudfil = 'none';
+
 function playAudio(string) {
     
+    switch (ljudfil) {
+        case 'Wild':
+            Wild.load();
+            break;
+        case 'Danger':
+            Danger.load();
+            break;
+        case 'Hobbits':
+            Hobbits.load();
+            break;
+        case 'Farfar':
+            Farfar.load();
+            break;
+        case 'Månadsskifte':
+            Månadsskifte.load();
+            break;
+    }
+
+    ljudfil = string;
+
     switch (string) {
         case 'Wild':
             Wild.play();
@@ -22,27 +44,26 @@ function playAudio(string) {
         case 'Månadsskifte':
             Månadsskifte.play();
             break;
-
     }
 }
 
-function loadAudio(string) {
+function pauseAudio(string) {
 
     switch (string) {
         case 'Wild':
-            Wild.load();
+            Wild.pause();
             break;
         case 'Danger':
-            Danger.load();
+            Danger.pause();
             break;
         case 'Hobbits':
-            Hobbits.load();
+            Hobbits.pause();
             break;
         case 'Farfar':
-            Farfar.load();
+            Farfar.pause();
             break;
         case 'Månadsskifte':
-            Månadsskifte.load();
+            Månadsskifte.pause();
             break;       
     }
 }

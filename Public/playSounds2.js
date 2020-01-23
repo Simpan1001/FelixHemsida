@@ -8,8 +8,42 @@ EnGraf = document.getElementById("EnGraf");
 VaGöru = document.getElementById("VaGöru");
 ThugLife = document.getElementById("ThugLife");
 
+ljudfil = 'none';
+
 function playAudio(string) {
     
+    switch (ljudfil) {
+        case 'håkarnBråkarn':
+            håkarnBråkarn.load();
+            break;
+        case 'AAA':
+            AAA.load();
+            break;
+        case 'Yay':
+            Yay.load();
+            break;
+        case 'DJH':
+            DJH.load();
+            break;
+        case 'Rumpr':
+            Rumpr.load();
+            break;
+        case 'StämHåkan':
+            StämHåkan.load();
+            break;
+        case 'EnGraf':
+            EnGraf.load();
+            break;
+        case 'VaGöru':
+            VaGöru.load();
+            break;
+        case 'ThugLife':
+            ThugLife.load();
+            break;
+    }
+
+    ljudfil = string;
+
     switch (string) {
         case 'håkarnBråkarn':
             håkarnBråkarn.play();
@@ -38,39 +72,38 @@ function playAudio(string) {
         case 'ThugLife':
             ThugLife.play();
             break;
-
     }
 }
 
-function loadAudio(string) {
+function pauseAudio(string) {
 
     switch (string) {
         case 'håkarnBråkarn':
-            håkarnBråkarn.load();
+            håkarnBråkarn.pause();
             break;
         case 'AAA':
-            AAA.load();
+            AAA.pause();
             break;
         case 'Yay':
-            Yay.load();
+            Yay.pause();
             break;
         case 'DJH':
-            DJH.load();
+            DJH.pause();
             break;
         case 'Rumpr':
-            Rumpr.load();
+            Rumpr.pause();
             break;
         case 'StämHåkan':
-            StämHåkan.load();
+            StämHåkan.pause();
             break;
         case 'EnGraf':
-            EnGraf.load();
+            EnGraf.pause();
             break;
         case 'VaGöru':
-            VaGöru.load();
+            VaGöru.pause();
             break;
         case 'ThugLife':
-            ThugLife.load();
+            ThugLife.pause();
             break;           
     }
 }

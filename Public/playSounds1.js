@@ -5,8 +5,33 @@ familj = document.getElementById("familj");
 sillar = document.getElementById("sillar");
 såga = document.getElementById("såga");
 
+let ljudfil = 'none';
+
 function playAudio(string) {
     
+    switch (ljudfil) {
+        case 'håkan':
+            håkan.load();
+            break;
+        case 'sofie':
+            sofie.load();
+            break;
+        case 'brott':
+            brott.load();
+            break;
+        case 'familj':
+            familj.load();
+            break;
+        case 'sillar':
+            sillar.load();
+            break;
+        case 'såga':
+            såga.load();
+            break;  
+    }
+
+    ljudfil = string;
+
     switch (string) {
         case 'håkan':
             håkan.play();
@@ -25,31 +50,30 @@ function playAudio(string) {
             break;
         case 'såga':
             såga.play();
-            break;
-        
+            break;  
     }
 }
 
-function loadAudio(string) {
+function pauseAudio(string) {
 
     switch (string) {
         case 'håkan':
-            håkan.load();
+            håkan.pause();
             break;
         case 'sofie':
-            sofie.load();
+            sofie.pause();
             break;
         case 'brott':
-            brott.load();
+            brott.pause();
             break;
         case 'familj':
-            familj.load();
+            familj.pause();
             break;
         case 'sillar':
-            sillar.load();
+            sillar.pause();
             break;
         case 'såga':
-            såga.load();
+            såga.pause();
             break;            
     }
 }
