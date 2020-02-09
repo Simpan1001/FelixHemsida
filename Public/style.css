@@ -1,6 +1,32 @@
-.backgroundColor {
-    background-color: rgb(180, 180, 180);
+.bodyHome {
+    background-image: url(media/bilder/background1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+.bodyB {
+    background-image: url(media/bilder/backgroundBlue.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.bodyR {
+    background-image: url(media/bilder/backgroundRed.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.bodyG {
+    background-image: url(media/bilder/backgroundGreen.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .felixFont {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
