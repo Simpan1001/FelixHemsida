@@ -16,6 +16,10 @@ app.get('/sida3', function(req, res) {
     res.sendFile(__dirname + '/Public/index3.html');
 });
 
+app.get('/sida4', function(req, res) {
+    res.sendFile(__dirname + '/Public/index4.html');
+});
+
 let server = app.listen(port, function() {
     console.log(`The server is up and running on port ${port}`);
 });
