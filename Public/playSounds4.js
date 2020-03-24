@@ -4,6 +4,7 @@ Händerna = document.getElementById("Händerna");
 HärKanManVa = document.getElementById("HärKanManVa");
 InteKul = document.getElementById("InteKul");
 IDontTinkSå = document.getElementById("IDontTinkSå");
+Ragnar = document.getElementById("Ragnar");
 
 ljudfil = 'none';
 
@@ -28,6 +29,9 @@ function playAudio(string) {
         case 'IDontTinkSå':
             IDontTinkSå.load();
             break;
+        case 'Ragnar':
+            Ragnar.load();
+            break;
     }
 
     ljudfil = string;
@@ -50,6 +54,9 @@ function playAudio(string) {
             break;
          case 'IDontTinkSå':
             IDontTinkSå.play();
+            break;
+        case 'Ragnar':
+            Ragnar.play();
             break;
     }
 }
@@ -74,6 +81,9 @@ function pauseAudio(string) {
             break;
          case 'IDontTinkSå':
             IDontTinkSå.pause();
+            break;
+        case 'Ragnar':
+            Ragnar.pause();
             break;
     }
 }
