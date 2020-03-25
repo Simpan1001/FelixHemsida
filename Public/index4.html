@@ -21,8 +21,17 @@
 <body class="bodyG">
 
     <header>
-        <div class="container-fluid headerText centerAlignment">
-            <h1 class="felixFont" style="font-size: 60px;">Felix Pub</h1>
+        <div class="container-fluid headerText">
+            <div class="col-sm-2 centerAlignment">
+                <img src="./media/bilder/FelixÖl.jpg" style="width: 100%; height: auto;">
+            </div>
+            <!-- headerText centerAlignment -->
+            <div class="col-sm-8 centerAlignment">
+                <h1 class="felixFont" style="font-size: 60px;">Felix Pub</h1>
+            </div>
+            <div class="col-sm-2 centerAlignment">
+                <img src="./media/bilder/FelixÖl.jpg" style="width: 100%; height: auto;">
+            </div>
         </div>
     </header>
 
@@ -32,122 +41,78 @@
                 <a class="navbar-brand" href="#">Meny</a>
             </div>
             <ul class="nav navbar-nav">
-                <li><a href="/index.html">Hem</a></li>
+                <li><a href="/index.html">Sunes Jul</a></li>
                 <li><a href="/index2.html">Små Demon</a></li>
                 <li><a href="/index3.html">Låtar</a></li>
-                <li class="active"><a href="#">Andra Demon</a></li>
+                <li class="active"><a href="#">TheFatRat</a></li>
             </ul>
         </div>
     </nav>
 
     <div class="container-fluid">
-        <h3 class="centerAlignment PGText">Här finns det fler demon. Nu lyssnar vi!</h3>
+        <h3 class="centerAlignment PGText">Här har vi lite musik från TheFatRat. Ska bli intressant...</h3>
         <br>
     </div>
 
     <!-- Låtarna börjar här -->
 
     <div class="container-fluid">
-        <div class="col-sm-4">
+        <!-- Monody -->
+        <div class="col-sm-6">
             <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
-                <audio id="Stina">
-                    <source src="/media/ljud/FrökenStina.wav" type="audio/wav">
+                <audio id="Monody">
+                    <source src="/media/ljud/Monody.mp3" type="audio/mp3">
                     Your browser does not support the audio element.
                 </audio>
-                <button type="button" class="btn-lg btn-success" onclick="playAudio('Stina')">Play</button>
-                <button type="button" class="btn-lg btn-danger" onclick="pauseAudio('Stina')">Pause</button>
-                <p class="centerAlignment audioText">Fröken Stina</p>
-            </div>
-        </div>
-        
-        <div class="col-sm-4">
-            <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
-                <audio id="Fem">
-                    <source src="/media/ljud/Fem.wav" type="audio/wav">
-                    Your browser does not support the audio element.
-                </audio>
-                <button type="button" class="btn-lg btn-success" onclick="playAudio('Fem')">Play</button>
-                <button type="button" class="btn-lg btn-danger" onclick="pauseAudio('Fem')">Pause</button>
-                <p class="centerAlignment audioText">5</p>
+                <button type="button" class="btn-lg btn-success" onclick="playAudio('Monody')">Play</button>
+                <button type="button" class="btn-lg btn-danger" onclick="pauseAudio('Monody')">Pause</button>
+                <p class="centerAlignment audioText">Monody</p>
             </div>
         </div>
 
-        <div class="col-sm-4">
+        <!-- Unity -->
+        <div class="col-sm-6">
             <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
-                <audio id="Händerna">
-                    <source src="/media/ljud/Händerna.wav" type="audio/wav">
+                <audio id="Unity">
+                    <source src="/media/ljud/Unity.mp3" type="audio/mp3">
                     Your browser does not support the audio element.
                 </audio>
-                <button type="button" class="btn-lg btn-success" onclick="playAudio('Händerna')">Play</button>
-                <button type="button" class="btn-lg btn-danger" onclick="pauseAudio('Händerna')">Pause</button>
-                <p class="centerAlignment audioText">Händerna</p>
+                <button type="button" class="btn-lg btn-success" onclick="playAudio('Unity')">Play</button>
+                <button type="button" class="btn-lg btn-danger" onclick="pauseAudio('Unity')">Pause</button>
+                <p class="centerAlignment audioText">Unity</p>
             </div>
         </div>
-    </div>
-
-    <div>
-        <br>
     </div>
 
     <div class="container-fluid">
+        <!-- Jackpot -->
         <div class="col-sm-6">
             <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
-                <audio id="HärKanManVa">
-                    <source src="/media/ljud/HärKanManVa.wav" type="audio/wav">
-                    Your browser does not support the audio element.
-                </audio>
-                <button type="button" class="btn-lg btn-success" onclick="playAudio('HärKanManVa')">Play</button>
-                <button type="button" class="btn-lg btn-danger" onclick="pauseAudio('HärKanManVa')">Pause</button>
-                <p class="centerAlignment audioText">Här kan man va</p>
-            </div>
-        </div>
-
-        <div class="col-sm-6">
-            <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
-                <audio id="InteKul">
-                    <source src="/media/ljud/InteKul.wav" type="audio/wav">
-                    Your browser does not support the audio element.
-                </audio>
-                <button type="button" class="btn-lg btn-success" onclick="playAudio('InteKul')">Play</button>
-                <button type="button" class="btn-lg btn-danger" onclick="pauseAudio('InteKul')">Pause</button>
-                <p class="centerAlignment audioText">Inte kul</p>
-            </div>
-        </div>
-    </div>
-
-    <div>
-        <br>
-    </div>
-
-    <div class="container-fluid">
-
-        <div class="col-sm-6">
-            <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
-                <audio id="IDontTinkSå">
-                <source src="/media/ljud/IDontTinkSå.wav" type="audio/wav">
+                <audio id="Jackpot">
+                    <source src="/media/ljud/Jackpot.mp3" type="audio/mp3">
                         Your browser does not support the audio element.
-                </audio>
-                <button type="button" class="btn-lg btn-success" onclick="playAudio('IDontTinkSå')">Play</button>
-                <button type="button" class="btn-lg btn-danger" onclick="pauseAudio('IDontTinkSå')">Pause</button>
-                <p class="centerAlignment audioText">No, I dont tink så</p>
-            </div>
+                    </audio>
+                    <button type="button" class="btn-lg btn-success" onclick="playAudio('Jackpot')">Play</button>
+                    <button type="button" class="btn-lg btn-danger" onclick="pauseAudio('Jackpot')">Pause</button>
+                    <p class="centerAlignment audioText">Jackpot</p>
+                </div>
         </div>
-
-        <div class="col-sm-6">
-            <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
-                <audio id="Ragnar">
-                <source src="/media/ljud/Ragnar.wav" type="audio/wav">
-                        Your browser does not support the audio element.
-                </audio>
-                <button type="button" class="btn-lg btn-success" onclick="playAudio('Ragnar')">Play</button>
-                <button type="button" class="btn-lg btn-danger" onclick="pauseAudio('Ragnar')">Pause</button>
-                <p class="centerAlignment audioText">Ragnar</p>
-            </div>
-        </div>
-    </div>
             
-
-    <script src="/playSounds4.js"></script>
+        <!-- The Calling -->
+        <div class="col-sm-6">
+                <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
+                    <audio id="Calling">
+                        <source src="/media/ljud/TheCalling.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                </audio>
+                <button type="button" class="btn-lg btn-success" onclick="playAudio('Calling')">Play</button>
+                <button type="button" class="btn-lg btn-danger" onclick="pauseAudio('Calling')">Pause</button>
+                <p class="centerAlignment audioText">Calling</p>
+            </div>
+        </div>
+    </div>
+        
+        <script src="/playSounds4.js"></script>
 
     <!-- Ljudfiler slutar här -->
 

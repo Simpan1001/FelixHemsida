@@ -3,8 +3,9 @@ Danger = document.getElementById("Danger");
 Hobbits = document.getElementById("Hobbits");
 Farfar = document.getElementById("Farfar");
 Månadsskifte = document.getElementById("Månadsskifte");
-Psychosocial = document.getElementById("Psycho");
 Skibidi = document.getElementById("Skibidi");
+Psychosocial = document.getElementById("Psycho");
+Hello = document.getElementById("Hello");
 
 ljudfil = 'none';
 
@@ -26,11 +27,14 @@ function playAudio(string) {
         case 'Månadsskifte':
             Månadsskifte.load();
             break;
+        case 'Skibidi':
+            Skibidi.load();
+            break;
         case 'Psycho':
             Psychosocial.load();
             break;
-        case 'Skibidi':
-            Skibidi.load();
+        case 'Hello':
+            Hello.load();
             break;
     }
 
@@ -52,11 +56,14 @@ function playAudio(string) {
         case 'Månadsskifte':
             Månadsskifte.play();
             break;
+        case 'Skibidi':
+            Skibidi.play();
+            break;
         case 'Psycho':
             Psychosocial.play();
             break;
-        case 'Skibidi':
-            Skibidi.play();
+        case 'Hello':
+            Hello.play();
             break;
         
     }
@@ -80,11 +87,14 @@ function pauseAudio(string) {
         case 'Månadsskifte':
             Månadsskifte.pause();
             break;    
+        case 'Skibidi':
+            Skibidi.pause();
+            break;  
         case 'Psycho':
             Psychosocial.pause();
             break;
-        case 'Skibidi':
-            Skibidi.pause();
+        case 'Hello':
+            Hello.pause();
             break;   
     }
 }

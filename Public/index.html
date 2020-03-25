@@ -20,8 +20,17 @@
 <body class="bodyHome">
     
     <header>
-        <div class="container-fluid headerText centerAlignment">
-            <h1 class="felixFont" style="font-size: 60px;">Felix Pub</h1>
+        <div class="container-fluid headerText">
+            <div class="col-sm-2 centerAlignment">
+                <img src="./media/bilder/FelixÖl.jpg" style="width: 100%; height: auto;">
+            </div>
+            <!-- headerText centerAlignment -->
+            <div class="col-sm-8 centerAlignment">
+                <h1 class="felixFont" style="font-size: 60px;">Felix Pub</h1>
+            </div>
+            <div class="col-sm-2 centerAlignment">
+                <img src="./media/bilder/FelixÖl.jpg" style="width: 100%; height: auto;">
+            </div>
         </div>
     </header>
 
@@ -31,10 +40,10 @@
                 <a class="navbar-brand" href="#">Meny</a>
             </div>
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Hem</a></li>
+                <li class="active"><a href="#">Sunes Jul</a></li>
                 <li><a href="/index2.html">Små Demon</a></li>
                 <li><a href="/index3.html">Låtar</a></li>
-                <li><a href="/index4.html">Andra Demon</a></li>
+                <li><a href="/index4.html">TheFatRat</a></li>
             </ul>
         </div>
     </nav>
@@ -67,13 +76,15 @@
 
     <div class="container-fluid">
         <div class="col-sm-6 col-sm-push-3 centerAlignment">
-            <h4 class="PGText"><br><br>Det finns mycket att välja på i livet som Felix gillar. Här är några ljud som Felix gillar.<br><br></h4>
+            <h4 class="PGText"><br><br>Det finns mycket att välja på i livet som Felix gillar. Här är några ljud som Felix gillar.<br>
+                Vi börjar med lite Sunes Hjul.<br><br></h4>
         </div>
     </div>
 
     <!-- Ljudfilerna början -->
 
     <div class="container-fluid">
+        <!-- LillebrorH -->
         <div class="col-sm-4">
             <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
                 <audio id="håkan">
@@ -86,6 +97,7 @@
             </div>
         </div>
 
+        <!-- Sofie -->
         <div class="col-sm-4">
             <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
                 <audio id="sofie">
@@ -98,6 +110,7 @@
             </div>
         </div>
 
+        <!-- Grovy Brott -->
         <div class="col-sm-4">
             <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
                 <audio id="brott">
@@ -112,8 +125,8 @@
     </div>
 
 
-
     <div class="container-fluid">
+        <!-- Andersson -->
         <div class="col-sm-4">
             <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
                 <audio id="familj">
@@ -126,6 +139,7 @@
             </div>
         </div>
 
+        <!-- Skånska Sillar -->
         <div class="col-sm-4">
             <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
                 <audio id="sillar">
@@ -138,6 +152,7 @@
             </div>
         </div>
 
+        <!-- Såga -->
         <div class="col-sm-4">
             <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
                 <audio id="såga">
@@ -147,6 +162,131 @@
                 <button type="button" class="btn-lg btn-success" onclick="playAudio('såga')" type="button">Play</button>
                 <button type="button" class="btn-lg btn-danger" onclick="pauseAudio('såga')" type="button">Pause</button>
                 <p class="centerAlignment audioText">Såga och såga</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <!-- Håkarn Bråkarn -->
+        <div class="col-sm-4">
+            <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
+                <audio id="håkarnBråkarn">
+                    <source src="/media/ljud/HåkarnBråkarn.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <button type="button" class="btn-lg btn-success" onclick="playAudio('håkarnBråkarn')">Play</button>
+                <button type="button" class="btn-lg btn-danger" onclick="pauseAudio('håkarnBråkarn')">Pause</button>
+                <p class="centerAlignment audioText">Håkarn Bråkarn</p>
+            </div>
+        </div>
+
+        <!-- AAA -->
+        <div class="col-sm-4">
+            <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
+                <audio id="AAA">
+                    <source src="/media/ljud/AAA.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <button type="button" class="btn-lg btn-success" onclick="playAudio('AAA')">Play</button>
+                <button type="button" class="btn-lg btn-danger" onclick="pauseAudio('AAA')">Pause</button>
+                <p class="centerAlignment audioText">HAAAAAAAA!!!</p>
+            </div>
+        </div>
+
+        <!-- Yay -->
+        <div class="col-sm-4">
+            <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
+                <audio id="Yay">
+                    <source src="/media/ljud/Yay.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <button type="button" class="btn-lg btn-success" onclick="playAudio('Yay')">Play</button>
+                <button type="button" class="btn-lg btn-danger" onclick="pauseAudio('Yay')">Pause</button>
+                <p class="centerAlignment audioText">Yay!</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <!-- DJH -->
+        <div class="col-sm-4">
+            <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
+                <audio id="DJH">
+                    <source src="/media/ljud/DJH.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <button type="button" class="btn-lg btn-success" onclick="playAudio('DJH')">Play</button>
+                <button type="button" class="btn-lg btn-danger" onclick="pauseAudio('DJH')">Pause</button>
+                <p class="centerAlignment audioText">DJH</p>
+            </div>
+        </div>
+
+        <!-- Rumpr -->
+        <div class="col-sm-4">
+            <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
+                <audio id="Rumpr">
+                    <source src="/media/ljud/RumpR.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <button type="button" class="btn-lg btn-success" onclick="playAudio('Rumpr')">Play</button>
+                <button type="button" class="btn-lg btn-danger" onclick="pauseAudio('Rumpr')">Pause</button>
+                <p class="centerAlignment audioText">Rumpr</p>
+            </div>
+        </div>
+
+        <!-- Stäm Håkan -->
+        <div class="col-sm-4">
+            <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
+                <audio id="StämHåkan">
+                    <source src="/media/ljud/StämHåkan.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <button type="button" class="btn-lg btn-success" onclick="playAudio('StämHåkan')">Play</button>
+                <button type="button" class="btn-lg btn-danger" onclick="pauseAudio('StämHåkan')">Pause</button>
+                <p class="centerAlignment audioText">Stäm Håkarn</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <!-- En Graf -->
+        <div class="col-sm-4">
+            <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
+                <audio id="EnGraf">
+                    <source src="/media/ljud/EnGraf.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <button type="button" class="btn-lg btn-success" onclick="playAudio('EnGraf')">Play</button>
+                <button type="button" class="btn-lg btn-danger" onclick="pauseAudio('EnGraf')">Pause</button>
+                <p class="centerAlignment audioText">EnGraf</p>
+            </div>
+        </div>
+
+        <!-- VaGöru -->
+        <div class="col-sm-4">
+            <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
+                <audio id="VaGöru">
+                    <source src="/media/ljud/VaGöru.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <button type="button" class="btn-lg btn-success" onclick="playAudio('VaGöru')">Play</button>
+                <button type="button" class="btn-lg btn-danger" onclick="pauseAudio('VaGöru')">Pause</button>
+                <p class="centerAlignment audioText">VaGöru?</p>
+            </div>
+        </div>
+
+        <!-- ThugLife -->
+        <div class="col-sm-4">
+            <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
+                <audio id="ThugLife">
+                    <source src="/media/ljud/ThugLife.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <button type="button" class="btn-lg btn-success" onclick="playAudio('ThugLife')">Play</button>
+                <button type="button" class="btn-lg btn-danger" onclick="pauseAudio('ThugLife')">Pause</button>
+                <p class="centerAlignment audioText">:O_O:</p>
             </div>
         </div>
     </div>

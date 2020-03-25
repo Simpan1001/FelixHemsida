@@ -1,76 +1,62 @@
-håkarnBråkarn = document.getElementById("håkarnBråkarn");
-AAA = document.getElementById("AAA");
-Yay = document.getElementById("Yay");
-DJH = document.getElementById("DJH");
-Rumpr = document.getElementById("Rumpr");
-StämHåkan = document.getElementById("StämHåkan");
-EnGraf = document.getElementById("EnGraf");
-VaGöru = document.getElementById("VaGöru");
-ThugLife = document.getElementById("ThugLife");
+Stina = document.getElementById("Stina");
+Fem = document.getElementById("Fem");
+Händerna = document.getElementById("Händerna");
+HärKanManVa = document.getElementById("HärKanManVa");
+InteKul = document.getElementById("InteKul");
+IDontTinkSå = document.getElementById("IDontTinkSå");
+Ragnar = document.getElementById("Ragnar");
 
 ljudfil = 'none';
 
 function playAudio(string) {
     
     switch (ljudfil) {
-        case 'håkarnBråkarn':
-            håkarnBråkarn.load();
+        case 'Stina':
+            Stina.load();
             break;
-        case 'AAA':
-            AAA.load();
+        case 'Fem':
+            Fem.load();
             break;
-        case 'Yay':
-            Yay.load();
+        case 'Händerna':
+            Händerna.load();
             break;
-        case 'DJH':
-            DJH.load();
+        case 'HärKanManVa':
+            HärKanManVa.load();
             break;
-        case 'Rumpr':
-            Rumpr.load();
+        case 'InteKul':
+            InteKul.load();
             break;
-        case 'StämHåkan':
-            StämHåkan.load();
+        case 'IDontTinkSå':
+            IDontTinkSå.load();
             break;
-        case 'EnGraf':
-            EnGraf.load();
-            break;
-        case 'VaGöru':
-            VaGöru.load();
-            break;
-        case 'ThugLife':
-            ThugLife.load();
+        case 'Ragnar':
+            Ragnar.load();
             break;
     }
 
     ljudfil = string;
 
     switch (string) {
-        case 'håkarnBråkarn':
-            håkarnBråkarn.play();
+        case 'Stina':
+            Stina.play();
             break;
-        case 'AAA':
-            AAA.play();
+        case 'Fem':
+            Fem.play();
             break;
-        case 'Yay':
-            Yay.play();
+        case 'Händerna':
+            Händerna.play();
             break;
-        case 'DJH':
-            DJH.play();
+        case 'HärKanManVa':
+            HärKanManVa.play();
             break;
-        case 'Rumpr':
-            Rumpr.play();
+        case 'InteKul':
+            InteKul.play();
             break;
-        case 'StämHåkan':
-            StämHåkan.play();
+         case 'IDontTinkSå':
+            IDontTinkSå.play();
             break;
-        case 'EnGraf':
-            EnGraf.play();
-            break;
-        case 'VaGöru':
-            VaGöru.play();
-            break;
-        case 'ThugLife':
-            ThugLife.play();
+        case 'Ragnar':
+            Ragnar.play();
             break;
     }
 }
@@ -78,32 +64,26 @@ function playAudio(string) {
 function pauseAudio(string) {
 
     switch (string) {
-        case 'håkarnBråkarn':
-            håkarnBråkarn.pause();
+        case 'Stina':
+            Stina.pause();
             break;
-        case 'AAA':
-            AAA.pause();
+        case 'Fem':
+            Fem.pause();
             break;
-        case 'Yay':
-            Yay.pause();
+        case 'Händerna':
+            Händerna.pause();
             break;
-        case 'DJH':
-            DJH.pause();
+        case 'HärKanManVa':
+            HärKanManVa.pause();
             break;
-        case 'Rumpr':
-            Rumpr.pause();
+        case 'InteKul':
+            InteKul.pause();
             break;
-        case 'StämHåkan':
-            StämHåkan.pause();
+         case 'IDontTinkSå':
+            IDontTinkSå.pause();
             break;
-        case 'EnGraf':
-            EnGraf.pause();
-            break;
-        case 'VaGöru':
-            VaGöru.pause();
-            break;
-        case 'ThugLife':
-            ThugLife.pause();
-            break;           
+        case 'Ragnar':
+            Ragnar.pause();
+            break;      
     }
 }

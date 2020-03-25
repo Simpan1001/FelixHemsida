@@ -21,8 +21,17 @@
 <body class="bodyR">
 
     <header>
-        <div class="container-fluid headerText centerAlignment">
-            <h1 class="felixFont" style="font-size: 60px;">Felix Pub</h1>
+        <div class="container-fluid headerText">
+            <div class="col-sm-2 centerAlignment">
+                <img src="./media/bilder/FelixÖl.jpg" style="width: 100%; height: auto;">
+            </div>
+            <!-- headerText centerAlignment -->
+            <div class="col-sm-8 centerAlignment">
+                <h1 class="felixFont" style="font-size: 60px;">Felix Pub</h1>
+            </div>
+            <div class="col-sm-2 centerAlignment">
+                <img src="./media/bilder/FelixÖl.jpg" style="width: 100%; height: auto;">
+            </div>
         </div>
     </header>
 
@@ -32,10 +41,10 @@
                 <a class="navbar-brand" href="#">Meny</a>
             </div>
             <ul class="nav navbar-nav">
-                <li><a href="/index.html">Hem</a></li>
+                <li><a href="/index.html">Sunes Jul</a></li>
                 <li><a href="/index2.html">Små Demon</a></li>
                 <li class="active"><a href="#">Låtar</a></li>
-                <li><a href="/index4.html">Andra Demon</a></li>
+                <li><a href="/index4.html">TheFatRat</a></li>
 
             </ul>
         </div>
@@ -49,6 +58,7 @@
     <!-- Låtarna börjar här -->
 
     <div class="container-fluid">
+        <!-- Wild Side -->
         <div class="col-sm-4">
             <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
                 <audio id="Wild">
@@ -60,7 +70,8 @@
                 <p class="centerAlignment audioText">Wild Side</p>
             </div>
         </div>
-        
+
+        <!-- Danger Zone -->
         <div class="col-sm-4">
             <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
                 <audio id="Danger">
@@ -73,6 +84,7 @@
             </div>
         </div>
 
+        <!-- Hobbits -->
         <div class="col-sm-4">
             <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
                 <audio id="Hobbits">
@@ -86,12 +98,10 @@
         </div>
     </div>
 
-    <div>
-        <br>
-    </div>
 
     <div class="container-fluid">
-        <div class="col-sm-6">
+        <!-- Farfar -->
+        <div class="col-sm-4">
             <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
                 <audio id="Farfar">
                     <source src="/media/ljud/NärFarfarVarUng.mp3" type="audio/mp3">
@@ -103,7 +113,8 @@
             </div>
         </div>
 
-        <div class="col-sm-6">
+        <!-- Månadsskifte -->
+        <div class="col-sm-4">
             <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
                 <audio id="Månadsskifte">
                     <source src="/media/ljud/Månadsskifte.mp3" type="audio/mp3">
@@ -114,13 +125,24 @@
                 <p class="centerAlignment audioText">Månadsskifte</p>
             </div>
         </div>
+
+        <!-- Skibidi -->
+        <div class="col-sm-4">
+            <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
+                <audio id="Skibidi">
+                    <source src="/media/ljud/Skibidi.wav" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <button type="button" class="btn-lg btn-success" onclick="playAudio('Skibidi')">Play</button>
+                <button type="button" class="btn-lg btn-danger" onclick="pauseAudio('Skibidi')">Pause</button>
+                <p class="centerAlignment audioText">Skibidi</p>
+            </div>
+        </div>
     </div>
 
-    <div>
-        <br>
-    </div>
 
     <div class="container-fluid">
+        <!-- Psychosocial -->
         <div class="col-sm-6">
             <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
                 <audio id="Psycho">
@@ -133,15 +155,16 @@
             </div>
         </div>
 
+        <!-- Hello -->
         <div class="col-sm-6">
             <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
-                <audio id="Skibidi">
-                    <source src="/media/ljud/Skibidi.wav" type="audio/mp3">
+                <audio id="Hello">
+                    <source src="/media/ljud/Hello.mp3" type="audio/mp3">
                     Your browser does not support the audio element.
                 </audio>
-                <button type="button" class="btn-lg btn-success" onclick="playAudio('Skibidi')">Play</button>
-                <button type="button" class="btn-lg btn-danger" onclick="pauseAudio('Skibidi')">Pause</button>
-                <p class="centerAlignment audioText">Skibidi</p>
+                <button type="button" class="btn-lg btn-success" onclick="playAudio('Hello')">Play</button>
+                <button type="button" class="btn-lg btn-danger" onclick="pauseAudio('Hello')">Pause</button>
+                <p class="centerAlignment audioText">Hello</p>
             </div>
         </div>
     </div>
