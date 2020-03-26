@@ -5,6 +5,8 @@ Farfar = document.getElementById("Farfar");
 Månadsskifte = document.getElementById("Månadsskifte");
 Skibidi = document.getElementById("Skibidi");
 Psychosocial = document.getElementById("Psycho");
+CallMeTheBreeze = document.getElementById("CallMeTheBreeze");
+PokaMig = document.getElementById("PokaMig");
 Hello = document.getElementById("Hello");
 
 ljudfil = 'none';
@@ -32,6 +34,12 @@ function playAudio(string) {
             break;
         case 'Psycho':
             Psychosocial.load();
+            break;
+        case 'CallMeTheBreeze':
+            CallMeTheBreeze.load();
+            break;
+        case 'PokaMig':
+            PokaMig.load();
             break;
         case 'Hello':
             Hello.load();
@@ -61,6 +69,12 @@ function playAudio(string) {
             break;
         case 'Psycho':
             Psychosocial.play();
+            break;
+        case 'CallMeTheBreeze':
+            CallMeTheBreeze.play();
+            break;
+        case 'PokaMig':
+            PokaMig.play();
             break;
         case 'Hello':
             Hello.play();
@@ -93,6 +107,12 @@ function pauseAudio(string) {
         case 'Psycho':
             Psychosocial.pause();
             break;
+        case 'CallMeTheBreeze':
+            CallMeTheBreeze.pause();
+            break;  
+        case 'PokaMig':
+            PokaMig.pause();
+            break;  
         case 'Hello':
             Hello.pause();
             break;   
