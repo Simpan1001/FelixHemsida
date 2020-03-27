@@ -7,6 +7,8 @@ Skibidi = document.getElementById("Skibidi");
 Psychosocial = document.getElementById("Psycho");
 CallMeTheBreeze = document.getElementById("CallMeTheBreeze");
 PokaMig = document.getElementById("PokaMig");
+EdwardBlom = document.getElementById("EdwardBlom");
+TheCoin = document.getElementById("TheCoin");
 Hello = document.getElementById("Hello");
 
 ljudfil = 'none';
@@ -40,6 +42,12 @@ function playAudio(string) {
             break;
         case 'PokaMig':
             PokaMig.load();
+            break;
+        case 'EdwardBlom':
+            EdwardBlom.load();
+            break;
+        case 'TheCoin':
+            TheCoin.load();
             break;
         case 'Hello':
             Hello.load();
@@ -75,6 +83,12 @@ function playAudio(string) {
             break;
         case 'PokaMig':
             PokaMig.play();
+            break;
+        case 'EdwardBlom':
+            EdwardBlom.play();
+            break;
+        case 'TheCoin':
+            TheCoin.play();
             break;
         case 'Hello':
             Hello.play();
@@ -112,6 +126,12 @@ function pauseAudio(string) {
             break;  
         case 'PokaMig':
             PokaMig.pause();
+            break;  
+        case 'EdwardBlom':
+            EdwardBlom.pause();
+            break;  
+        case 'TheCoin':
+            TheCoin.pause();
             break;  
         case 'Hello':
             Hello.pause();
