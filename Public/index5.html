@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Sidan för låtar -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Felix Pub</title>
+</head>
+<body class="bodyR">
+
+    <header>
+        <div class="container-fluid headerText">
+            <div class="col-sm-2 centerAlignment">
+                <img src="./media/bilder/FelixÖl.jpg" style="width: 100%; height: auto;">
+            </div>
+            <!-- headerText centerAlignment -->
+            <div class="col-sm-8 centerAlignment">
+                <h1 class="felixFont" style="font-size: 60px;">Felix Pub</h1>
+            </div>
+            <div class="col-sm-2 centerAlignment">
+                <img src="./media/bilder/FelixÖl.jpg" style="width: 100%; height: auto;">
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-inverse" style="margin: 10px;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Meny</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="/index.html">Sunes Jul</a></li>
+                <li><a href="/index2.html">Små Demon</a></li>
+                <li><a href="/index3.html">Låtar</a></li>
+                <li><a href="/index4.html">TheFatRat</a></li>
+                <li class="active"><a href="#">Daft Punk</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <h3 class="centerAlignment PGText">Nu lyssnar vi på Daft Punk för fan! Woooh!</h3>
+        <br>
+    </div>
+
+    <!-- Låtarna börjar här -->
+
+    <div class="container-fluid">
+        <!-- Around The World -->
+        <div class="col-sm-6">
+            <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
+                <audio id="World">
+                    <source src="/media/ljud/AroundTheWorld.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <button type="button" class="btn-lg btn-success" onclick="playAudio('World')">Play</button>
+                <button type="button" class="btn-lg btn-danger" onclick="pauseAudio('World')">Pause</button>
+                <p class="centerAlignment audioText">Around The World</p>
+            </div>
+        </div>
+
+        <!-- Harder Better Faster Stronger -->
+        <div class="col-sm-6">
+            <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
+                <audio id="HBFS">
+                    <source src="/media/ljud/HarderBetterFasterStronger.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <button type="button" class="btn-lg btn-success" onclick="playAudio('HBFS')">Play</button>
+                <button type="button" class="btn-lg btn-danger" onclick="pauseAudio('HBFS')">Pause</button>
+                <p class="centerAlignment audioText">Harder Better Faster Stronger</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <!-- Technologic -->
+        <div class="col-sm-6">
+            <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
+                <audio id="Technologic">
+                    <source src="/media/ljud/Technologic.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <button type="button" class="btn-lg btn-success" onclick="playAudio('Technologic')">Play</button>
+                <button type="button" class="btn-lg btn-danger" onclick="pauseAudio('Technologic')">Pause</button>
+                <p class="centerAlignment audioText">Technologic</p>
+            </div>
+        </div>
+
+        <!-- Get Lucky -->
+        <div class="col-sm-6">
+            <div class="col-sm-10 col-sm-push-1 centerAlignment audioBlock">
+                <audio id="Lucky">
+                    <source src="/media/ljud/GetLucky.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <button type="button" class="btn-lg btn-success" onclick="playAudio('Lucky')">Play</button>
+                <button type="button" class="btn-lg btn-danger" onclick="pauseAudio('Lucky')">Pause</button>
+                <p class="centerAlignment audioText">Get Lucky</p>
+            </div>
+        </div>
+    </div>
+            
+    <script src="/playSounds5.js"></script>
+
+    <!-- Ljudfiler slutar här -->
+
+    <footer>
+        <div class="footerText centerAlignment">
+            <h3>Felix Springer Corporations CopyRight TradeMarked</h3>
+        </div>
+    </footer>
+
+</body>
+</html>

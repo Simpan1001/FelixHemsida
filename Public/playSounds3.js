@@ -138,3 +138,15 @@ function pauseAudio(string) {
             break;   
     }
 }
+
+function showLyrics (phrase) {
+    let ID = phrase + "Lyrics";
+    let block = document.getElementById(ID);
+
+    if (block.style.display != "block") {
+        block.style.display = "block"
+    }
+    else {
+        block.style.display = "none";
+    }
+}
