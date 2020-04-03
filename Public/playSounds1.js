@@ -193,7 +193,6 @@ function chechForDay () {
     else {
         document.getElementById('headerIMG1').src = "./media/bilder/ImorgonEDetFredag.PNG";
         document.getElementById('headerIMG2').src = "./media/bilder/ImorgonEDetFredag.PNG";
-        document.getElementById('underParagraf').innerHTML = "Imorgon ere Fredag!!! Mmhmhmm... KÖP CHIPS O LÄSK NU!!!";
         playAudio('Fredag');
     }
 }
