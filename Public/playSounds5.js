@@ -3,6 +3,8 @@ HBFS = document.getElementById("HBFS");
 Technologic = document.getElementById("Technologic");
 Lucky = document.getElementById("Lucky");
 
+let Troll = document.getElementById('ElnourRemix');
+
 ljudfil = 'none';
 
 function playAudio(string) {
@@ -19,6 +21,10 @@ function playAudio(string) {
             break;
         case 'Lucky':
             Lucky.load();
+            break;
+
+        case 'Troll':
+            Troll.load();
             break;
     }
 
@@ -37,6 +43,10 @@ function playAudio(string) {
         case 'Lucky':
             Lucky.play();
             break;
+
+        case 'Troll':
+            Troll.play();
+            break;
     }
 }
 
@@ -54,6 +64,10 @@ function pauseAudio(string) {
             break;
         case 'Lucky':
             Lucky.pause();
+            break;
+            
+        case 'Troll':
+            Troll.pause();
             break;
     }
 }

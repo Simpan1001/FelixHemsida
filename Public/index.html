@@ -17,22 +17,27 @@
 
     <title>Felix Pub</title>
 </head>
-<body class="bodyHome">
+<body class="bodyHome" onload="chechForDay()">
     
     <header>
         <div class="container-fluid headerText">
-            <div class="col-sm-2 centerAlignment">
-                <img src="./media/bilder/FelixÖl.jpg" style="width: 100%; height: auto;">
+            <div class="col-sm-2 col-xs-3 centerAlignment">
+                <img id="headerIMG1" src="" alt="Här ska det vara en bild" style="width: 100%; height: auto;" onclick="pauseAudio('Fredag')">
             </div>
             <!-- headerText centerAlignment -->
-            <div class="col-sm-8 centerAlignment">
+            <div class="col-sm-8 col-xs-6 centerAlignment">
                 <h1 class="felixFont" style="font-size: 60px;">Felix Pub</h1>
+                <p id="underParagraf"></p>
             </div>
-            <div class="col-sm-2 centerAlignment">
-                <img src="./media/bilder/FelixÖl.jpg" style="width: 100%; height: auto;">
+            <div class="col-sm-2 col-xs-3 centerAlignment">
+                <img id="headerIMG2" src="" alt="Här ska det vara en bild" style="width: 100%; height: auto;">
             </div>
         </div>
     </header>
+
+    <audio id="FREDAG">
+        <source src="/media/ljud/FREDAG.wav" type="audio/wav">
+    </audio>
 
     <nav class="navbar navbar-inverse" style="margin: 10px;">
         <div class="container-fluid">
@@ -49,8 +54,9 @@
         </div>
     </nav>
 
+    <!-- First images of F and I -->
     <div class="container-fluid">
-        <div class="col-sm-4">
+        <div class="col-sm-4 col-xs-4">
             <div class="row centerAlignment">
                 <img src="./media/bilder/Fillemon2.jpg" alt="Fille" width="80%" height="AUTO">
             </div>
@@ -59,12 +65,12 @@
                 <img src="./media/bilder/Fillemon2.jpg" alt="Fille" width="80%" height="AUTO">
             </div>
         </div>
-        <div class="col-sm-4 centerAlignment">
+        <div class="col-sm-4 col-xs-4 centerAlignment">
             <h3 class="PGText">Hejsan nollor! Det här är Fillemons hemsida där man kan ha kul och göra roliga saker.</h3>
             <img src="./media/bilder/Fiskar.PNG" alt="Isse" width="80%" height="AUTO">
             <h5 class="PGText">Isse demonstrerar hur en fundersam min ser ut.</h5>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 col-xs-4">
             <div class="row centerAlignment">
                 <img src="./media/bilder/Fillemon2.jpg" alt="Fille" width="80%" height="AUTO">
             </div>
@@ -76,7 +82,7 @@
     </div>
 
     <div class="container-fluid">
-        <div class="col-sm-6 col-sm-push-3 centerAlignment">
+        <div class="col-sm-6 col-sm-push-3 col-xs-10 col-xs-push-1 centerAlignment">
             <h4 class="PGText"><br><br>Det finns mycket att välja på i livet som Felix gillar. Här är några ljud som Felix gillar.<br>
                 Vi börjar med lite Sunes Hjul.<br><br></h4>
         </div>
@@ -297,8 +303,10 @@
     <!-- Ljudfilerna slut -->
 
     <footer>
-        <div class="footerText centerAlignment">
-            <h3>Felix Springer Corporations CopyRight TradeMarked</h3>
+        <div class="container-fluid footerText">
+            <div class="col-sm-12 centerAlignment">
+                <h3>Felix Springer Corporations CopyRight TradeMarked</h3>
+            </div>
         </div>
     </footer>
 </body>

@@ -14,6 +14,8 @@ EnGraf = document.getElementById("EnGraf");
 VaGöru = document.getElementById("VaGöru");
 ThugLife = document.getElementById("ThugLife");
 
+let Fredag = document.getElementById('FREDAG');
+
 let ljudfil = 'none';
 
 function playAudio(string) {
@@ -63,6 +65,10 @@ function playAudio(string) {
             break;
         case 'ThugLife':
             ThugLife.load();
+            break;
+
+        case 'Fredag':
+            Fredag.load();
             break;
     }
 
@@ -114,6 +120,10 @@ function playAudio(string) {
         case 'ThugLife':
             ThugLife.play();
             break;
+
+        case 'Fredag':
+            Fredag.play();
+            break;
     }
 }
 
@@ -164,6 +174,26 @@ function pauseAudio(string) {
             break;
         case 'ThugLife':
             ThugLife.pause();
-            break;          
+            break;
+  
+        case 'Fredag':
+            Fredag.pause();
+            break;      
+    }
+}
+
+function chechForDay () {
+
+    let day = new Date();
+    let week = day.getDay();
+    if (week != 5) { // Ska vara 4 eftersom låten ska spelas upp på Torsdagar
+        document.getElementById('headerIMG1').src = "./media/bilder/FelixÖl.jpg";
+        document.getElementById('headerIMG2').src = "./media/bilder/FelixÖl.jpg";
+    }
+    else {
+        document.getElementById('headerIMG1').src = "./media/bilder/ImorgonEDetFredag.PNG";
+        document.getElementById('headerIMG2').src = "./media/bilder/ImorgonEDetFredag.PNG";
+        document.getElementById('underParagraf').innerHTML = "Imorgon ere Fredag!!! Mmhmhmm... KÖP CHIPS O LÄSK NU!!!";
+        playAudio('Fredag');
     }
 }
