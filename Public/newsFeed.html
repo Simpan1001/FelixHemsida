@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="./media/bilder/IconForFelixPub.png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Felix Pub</title>
+</head>
+<body class="bodyHome" onload="chechForDay()">
+
+    <header>
+        <div class="container-fluid headerText">
+            <div class="col-sm-2 col-xs-4 centerAlignment">
+                <img id="headerIMG1" src="" alt="Här ska det vara en bild" style="width: 100%; margin-top: 2vw; margin-bottom: 2vw;" onclick="pauseAudio('Fredag')">
+            </div>
+            <!-- headerText centerAlignment -->
+            <div class="col-sm-8 col-xs-4">
+                <h1 class="felixFont centerAlignment" style="font-size: 6vw; margin-top: 5vw; margin-bottom: 5vw;">Felix Pub</h1>
+            </div>
+            <div class="col-sm-2 col-xs-4 centerAlignment">
+                <img id="headerIMG2" src="" alt="Här ska det vara en bild" style="width: 100%; margin-top: 2vw; margin-bottom: 2vw;">
+            </div>
+        </div>
+    </header>
+
+    <audio id="FREDAG">
+        <source src="/media/ljud/FREDAG.wav" type="audio/wav">
+    </audio>
+
+    <nav class="navbar navbar-inverse" style="margin: 10px;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Meny</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">What's new?</a></li>
+                <li><a href="/index1.html">Sunes Jul</a></li>
+                <li><a href="/index2.html">Små Demon</a></li>
+                <li><a href="/index3.html">Låtar</a></li>
+                <li><a href="/index4.html">TheFatRat</a></li>
+                <li><a href="/index5.html">Daft Punk</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Felix Pub Games
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="Plattform-Blast">Platform Blast Reloaded</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div>
+        <h1 class="felixFont centerAlignment">NEWS</h1>
+    </div>
+
+    <article class="container-fluid newsBlock">
+        <h3 class="felixFont">Version 2.0</h3>
+
+        <div class="col-sm-2 col-xs-2">
+            <img src="./media/bilder/PlattformBlast.jpg" style="width: 100%;">
+        </div>
+        <div class="col-sm-8 col-xs-8" style="text-align: center;">
+            <p class="felixFont" style="text-align: center;">
+                Version 2.0 is here! With 2.0 came this NewsFeed. Felix Pub now has a page dedicated to 
+                information about updates comming to the website. 
+            </p>
+            <p class="felixFont" style="text-align: center;">
+                Along with 2.0 came a new part of the 
+                menu-tab, wich is the Game-section. The first game to be added to Felix Pub is 'Platform
+                Blast Reloaded' - developed by Simpan1001 as his first 2D, PvP-styled game. Featuring the 
+                two cowboys Gregory McSunflower and Mr Blueberry in a Showdown. Play it with a 
+                friend and see who will win.
+            </p>
+        </div>
+        <div class="col-sm-2 col-xs-2">
+            
+        </div>
+    </article>
+    <br>
+
+    <script src="/newsFeed.js"></script>
+
+    <footer>
+        <div class="container-fluid footerText">
+            <div class="col-sm-12 centerAlignment">
+                <h3>Felix Springer Corporations CopyRight TradeMarked</h3>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

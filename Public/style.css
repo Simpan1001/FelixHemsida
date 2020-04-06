@@ -6,21 +6,35 @@
     background-attachment: fixed;
 }
 .bodyB {
-    background-image: url(media/bilder/backgroundBlue.jpg);
+    background-image: url(media/bilder/BackgroundBlue.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 .bodyR {
-    background-image: url(media/bilder/backgroundRed.jpg);
+    background-image: url(media/bilder/BackgroundRed.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 .bodyG {
-    background-image: url(media/bilder/backgroundGreen.jpg);
+    background-image: url(media/bilder/BackgroundGreen.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.bodyY {
+    background-image: url(media/bilder/BackgroundYellow.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.bodyP {
+    background-image: url(media/bilder/BackgroundPurple.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -75,4 +89,11 @@
     font-family: 'Bangers', cursive;
     font-weight: normal;
     font-style: normal;
+}
+.newsBlock {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(100, 100, 100, 0.9);
+    padding: 2px;
+    margin: 10px;
 }

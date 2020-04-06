@@ -181,18 +181,3 @@ function pauseAudio(string) {
             break;      
     }
 }
-
-function chechForDay () {
-
-    let day = new Date();
-    let week = day.getDay();
-    if (week != 5) { // Ska vara 4 eftersom låten ska spelas upp på Torsdagar
-        document.getElementById('headerIMG1').src = "./media/bilder/FelixÖl.jpg";
-        document.getElementById('headerIMG2').src = "./media/bilder/FelixÖl.jpg";
-    }
-    else {
-        document.getElementById('headerIMG1').src = "./media/bilder/ImorgonEDetFredag.PNG";
-        document.getElementById('headerIMG2').src = "./media/bilder/ImorgonEDetFredag.PNG";
-        playAudio('Fredag');
-    }
-}
