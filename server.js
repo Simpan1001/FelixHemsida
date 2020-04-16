@@ -6,22 +6,22 @@ app.use(express.static(__dirname + '/Public'));
 
 
 app.get('/', function(req, res) {
-    res.sendFile(__dirname + '/Public/newsFeed.html');
+    res.sendFile(__dirname + '/Public/WhatsNew.html');
 });
 app.get('/sida1', function(req, res) {
-    res.sendFile(__dirname + '/Public/index1.html');
+    res.sendFile(__dirname + '/Public/SunesJul.html');
 });
 app.get('/sida2', function(req, res) {
-    res.sendFile(__dirname + '/Public/index2.html');
+    res.sendFile(__dirname + '/Public/SmaDemon.html');
 });
 app.get('/sida3', function(req, res) {
-    res.sendFile(__dirname + '/Public/index3.html');
+    res.sendFile(__dirname + '/Public/Latar.html');
 });
 app.get('/sida4', function(req, res) {
-    res.sendFile(__dirname + '/Public/index4.html');
+    res.sendFile(__dirname + '/Public/TheFatRat.html');
 });
 app.get('/sida5', function(req, res) {
-    res.sendFile(__dirname + '/Public/index5.html');
+    res.sendFile(__dirname + '/Public/DaftPunk.html');
 });
 
 app.get('/Plattform-Blast', function(req, res) {

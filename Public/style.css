@@ -1,44 +1,31 @@
 .bodyHome {
     background-image: url(media/bilder/background1.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 .bodyB {
     background-image: url(media/bilder/BackgroundBlue.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 .bodyR {
     background-image: url(media/bilder/BackgroundRed.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 .bodyG {
     background-image: url(media/bilder/BackgroundGreen.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 .bodyY {
     background-image: url(media/bilder/BackgroundYellow.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 .bodyP {
     background-image: url(media/bilder/BackgroundPurple.jpg);
+}
+.discoBG {
+    background-image: url(./media/bilder/DiscoWallpaper2.jpg);
+}
+.discoBGGif {
+    background-image: url(./media/bilder/DiscoWallpaperGif.gif);
+}
+.bodyFormat {
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: repeat;
 }
 
 .felixFont {
