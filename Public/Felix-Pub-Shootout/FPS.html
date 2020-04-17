@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <link rel="stylesheet" type="text/css" href="TemplateData/styleFPS.css">
+    <!-- <link rel="stylesheet" href="TemplateData/style.css"> -->
+    
+
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+
+    <script>var unityInstance = UnityLoader.instantiate("unityContainer", "Build/CompleteGames.json", {onProgress: UnityProgress});</script>
+    
+    <link rel="shortcut icon" type="image/png" href="../media/bilder/IconForFelixPub.png">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Felix Pub ShootOut</title>
+  
+  </head>
+  <body class="bodyO">
+
+    <header>
+      <div class="container-fluid headerText">
+          <div class="col-sm-2 col-xs-4 centerAlignment">
+              <img src="../media/bilder/FelixÖl.jpg" alt="Här ska det vara en bild" style="width: 100%; margin-top: 2vw; margin-bottom: 2vw;">
+          </div>
+          <!-- headerText centerAlignment -->
+          <div class="col-sm-8 col-xs-4">
+              <h1 class="felixFont centerAlignment" style="font-size: 6vw; margin-top: 5vw; margin-bottom: 5vw;">Felix Pub</h1>
+          </div>
+          <div class="col-sm-2 col-xs-4 centerAlignment">
+              <img src="../media/bilder/FelixÖl.jpg" alt="Här ska det vara en bild" style="width: 100%; margin-top: 2vw; margin-bottom: 2vw;">
+          </div>
+      </div>
+  </header>
+
+
+  <nav class="navbar navbar-inverse" style="margin: 10px;">
+      <div class="container-fluid">
+          <div class="navbar-header">
+              <a class="navbar-brand" href="#">Meny</a>
+          </div>
+          <ul class="nav navbar-nav">
+              <li><a href="/WhatsNew.html">What's new?</a></li>
+              <li><a href="/SunesJul.html">Sunes Jul</a></li>
+              <li><a href="/SmaDemon.html">Små Demon</a></li>
+              <li><a href="/Latar.html">Låtar</a></li>
+              <li><a href="/TheFatRat.html">TheFatRat</a></li>
+              <li><a href="/DaftPunk.html">Daft Punk</a></li>
+              
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Felix Pub Games
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="../Plattform-Blast">Platform Blast Reloaded</a>
+                      <a class="dropdown-item" href="#">Felix Pub Shootout</a>
+                  </div>
+              </li>
+          </ul>
+      </div>
+  </nav>
+
+
+<div class="row">
+  <div class="col-sm-12">
+      <h1 class="PGText centerAlignment">Felix Pub Shootout</h1>
+  </div>
+</div>
+
+<div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+
+<div style="position:relative">
+    <div class="webgl-content">
+        <div id="unityContainer" style="width: 960px; height: 600px"></div>
+        <div class="footer">
+          <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+          <!-- <div class="webgl-logo"></div>
+        <div class="title">Felix Pub ShootOut 01</div> -->
+        </div>
+    </div>
+</div>
+
+<div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+
+<footer>
+  <div class="container-fluid footerText">
+      <div class="col-sm-12 centerAlignment">
+          <h3>Felix Springer Corporations CopyRight TradeMarked</h3>
+      </div>
+  </div>
+</footer>
+
+  </body>
+</html>

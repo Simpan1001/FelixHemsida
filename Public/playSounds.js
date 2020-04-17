@@ -16,19 +16,24 @@ function pauseAudio (string) {
     }
 }
 
-function IsItThursday () {
+function WhatDayIsIt (weekday) {
     let day = new Date();
     let week = day.getDay();
-    if (week != 4) { // Ska vara 4 eftersom låten ska spelas upp på Torsdagar
+    if (week == weekday) {
+        if (weekday == 4) { // Ska vara 4 eftersom låten ska spelas upp på Torsdagar
+            document.getElementById('headerIMG1').src = "./media/bilder/ImorgonEDetFredag.PNG";
+            document.getElementById('headerIMG2').src = "./media/bilder/ImorgonEDetFredag.PNG";
+            document.getElementById('headerLOL').className = "container-fluid headerText discoBG bodyFormat";
+            document.getElementById('homeBG').className = "discoBGGif bodyFormat";
+            playAudio('FREDAG');
+        }
+        else if (weekday == 7) {
+            playAudio('LillebrorH');
+        }
+    }
+    else { // Om det inte är någon speciell dag
         document.getElementById('headerIMG1').src = "./media/bilder/FelixÖl.jpg";
         document.getElementById('headerIMG2').src = "./media/bilder/FelixÖl.jpg";
-    }
-    else {
-        document.getElementById('headerIMG1').src = "./media/bilder/ImorgonEDetFredag.PNG";
-        document.getElementById('headerIMG2').src = "./media/bilder/ImorgonEDetFredag.PNG";
-        document.getElementById('headerLOL').className = "container-fluid headerText discoBG bodyFormat";
-        document.getElementById('homeBG').className = "discoBGGif bodyFormat";
-        playAudio('FREDAG');
     }
 }
 
