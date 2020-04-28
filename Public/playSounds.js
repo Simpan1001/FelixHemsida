@@ -21,8 +21,8 @@ function WhatDayIsIt (weekday) {
     let week = day.getDay();
     if (week == weekday) {
         if (weekday == 4) { // Ska vara 4 eftersom låten ska spelas upp på Torsdagar
-            document.getElementById('headerIMG1').src = "./media/bilder/ImorgonEDetFredag.PNG";
-            document.getElementById('headerIMG2').src = "./media/bilder/ImorgonEDetFredag.PNG";
+            document.getElementById('headerIMG1').src = "../media/bilder/ImorgonEDetFredag.PNG";
+            document.getElementById('headerIMG2').src = "../media/bilder/ImorgonEDetFredag.PNG";
             document.getElementById('headerLOL').className = "container-fluid headerText discoBG bodyFormat";
             document.getElementById('homeBG').className = "discoBGGif bodyFormat";
             playAudio('FREDAG');
@@ -32,8 +32,8 @@ function WhatDayIsIt (weekday) {
         }
     }
     else { // Om det inte är någon speciell dag
-        document.getElementById('headerIMG1').src = "./media/bilder/FelixÖl.jpg";
-        document.getElementById('headerIMG2').src = "./media/bilder/FelixÖl.jpg";
+        document.getElementById('headerIMG1').src = "../media/bilder/FelixBeer.jpg";
+        document.getElementById('headerIMG2').src = "../media/bilder/FelixBeer.jpg";
     }
 }
 

@@ -14,7 +14,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
     <title>Felix Pub</title>
 </head>
 <body id="homeBG" class="bodyHome bodyFormat" onload="WhatDayIsIt(5)">
@@ -22,14 +22,14 @@
     <header>
         <div id="headerLOL" class="container-fluid headerText">
             <div class="col-sm-2 col-xs-4 centerAlignment">
-                <img id="headerIMG1" src="./media/bilder/FelixÖl.jpg" alt="Här ska det vara en bild" style="width: 100%; margin-top: 2vw; margin-bottom: 2vw;" onclick="pauseAudio('FREDAG')">
+                <img id="headerIMG1" src="../media/bilder/FelixBeer.jpg" alt="Här ska det vara en bild" style="width: 100%; margin-top: 2vw; margin-bottom: 2vw;" onclick="pauseAudio('FREDAG')">
             </div>
             <!-- headerText centerAlignment -->
             <div class="col-sm-8 col-xs-4">
                 <h1 class="felixFont centerAlignment" style="font-size: 6vw; margin-top: 5vw; margin-bottom: 5vw;">Felix Pub</h1>
             </div>
             <div class="col-sm-2 col-xs-4 centerAlignment">
-                <img id="headerIMG2" src="./media/bilder/FelixÖl.jpg" alt="Här ska det vara en bild" style="width: 100%; margin-top: 2vw; margin-bottom: 2vw;">
+                <img id="headerIMG2" src="../media/bilder/FelixBeer.jpg" alt="Här ska det vara en bild" style="width: 100%; margin-top: 2vw; margin-bottom: 2vw;">
             </div>
         </div>
     </header>
@@ -40,23 +40,22 @@
     <audio id="LillebrorH">
         <source src="/media/ljud/LillebrorH.wav" type="audio/wav">
     </audio>
+
     <nav class="navbar navbar-inverse" style="margin: 10px;">
         <div class="container-fluid">
-            <!-- <div class="navbar-header">
-                <a class="navbar-brand" href="#">Meny</a>
-            </div> -->
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">&#129347 Main Menu &#129347</a></li>
-                <li><a href="/SunesJul.html">&#127928 Ljud som Felix gillar &#127925</a></li>
+                <li><a href="/Sidor/SunesJul.html">&#127928 Ljud som Felix gillar &#127925</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
                         &#127918 Felix Pub Games &#127919
                     </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="Plattform-Blast">Platform Blast Reloaded</a>
-                        <a class="dropdown-item" href="Felix-Pub-Shootout">Felix Pub Shootout</a>
+                        <a class="dropdown-item" href="../Plattform-Blast">Platform Blast Reloaded</a>
+                        <a class="dropdown-item" href="../Felix-Pub-Shootout">Felix Pub Shootout</a>
                     </div>
                 </li>
+                <li><a href="/Sidor/Memes.html">&#9996 Memers Pub &#127941</a></li>
 
             </ul>
         </div>
@@ -65,6 +64,24 @@
     <div>
         <h1 class="felixFont centerAlignment">NEWS</h1>
     </div>
+
+    <!-- v. 2.004 -->
+    <article class="container-fluid newsBlock">
+        <div class="col-sm-2 col-xs-3">
+            <img src="../media/bilder/Train.png" style="width: 100%; margin-top: 1vw; margin-bottom: 1vw;">
+        </div>
+        <div class="col-sm-8 col-xs-6" style="text-align: center;">
+            <h3 class="felixFont">Version 2.004 - [2020/04/28]</h3>
+            <p class="felixFont" style="text-align: center;">
+                Version 2.004 is here and you know what that means? Yeah! The memes are here!
+                There is now a new section here on Felix Pub wich is the Meme section, called
+                'Memers Pub'. Click there if you want some laughter to liven up your depressing 
+                life. Every now and then there are new memes comming and being added to 
+                Memers Pub, so make sure you are up to date and know your memes! XD
+            </p>
+        </div>
+    </article>
+    <br>
 
     <!-- v. 2.003 -->
     <article class="container-fluid newsBlock">
@@ -86,9 +103,8 @@
     <!-- v. 2.002 -->
     <article class="container-fluid newsBlock">
         <div class="col-sm-2 col-xs-3">
-            <img src="./media/bilder/FelixPubLogoS.jpg" style="width: 100%; margin-top: 1vw; margin-bottom: 1vw;">
+            <img src="../media/bilder/FelixPubLogoS.jpg" style="width: 100%; margin-top: 1vw; margin-bottom: 1vw;">
         </div>
-
         <div class="col-sm-8 col-xs-6" style="text-align: center;">
             <h3 class="felixFont">Version 2.002 - [2020/04/17]</h3>
             <p class="felixFont" style="text-align: center;">
@@ -103,7 +119,6 @@
     <!-- v. 2.001 -->
     <article class="container-fluid newsBlock">
         <h3 class="felixFont">Version 2.001 - [2020/04/16]</h3>
-
         <div class="col-sm-8 col-sm-push-2 col-xs-8 col-xs-push-2" style="text-align: center;">
             <p class="felixFont" style="text-align: center;">
                 Version 2.001 comes with some upgrades to the structure in the file system. Optimizations 
@@ -121,12 +136,11 @@
 
     <!-- v. 2.0 -->
     <article class="container-fluid newsBlock">
-        <h3 class="felixFont">Version 2.0</h3>
-
-        <div class="col-sm-2 col-xs-2">
-            <img src="./media/bilder/PlattformBlast.jpg" style="width: 100%;">
+        <div class="col-sm-2 col-xs-3">
+            <img src="../media/bilder/PlattformBlast.jpg" style="width: 100%; margin-top: 1vw; margin-bottom: 1vw;">
         </div>
         <div class="col-sm-8 col-xs-8" style="text-align: center;">
+            <h3 class="felixFont">Version 2.0</h3>
             <p class="felixFont" style="text-align: center;">
                 Version 2.0 is here! With 2.0 came this NewsFeed. Felix Pub now has a page dedicated to 
                 information about updates comming to the website. 
