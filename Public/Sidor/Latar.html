@@ -180,6 +180,53 @@
                 </div>
             </div>
         </div> 
+        <!-- Black Widow of la Porte -->
+        <div class="col-sm-4">
+            <div class="col-sm-10 col-sm-push-1 centerAlignment itemBlock">
+                <audio id="BlackWidow">
+                    <source src="/media/ljud/BlackWidowoflaPorte.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <button type="button" class="btn-lg btn-success" onclick="playAudio('BlackWidow')">Play</button>
+                <button type="button" class="btn-lg btn-danger" onclick="pauseAudio('BlackWidow')">Pause</button>
+                <p class="centerAlignment audioText">Black Widow of la Porte</p>
+                <button type="button" class="btn-lg btn-warning" onclick="showLyrics('BlackWidow', '3_9')">Lyrics</button>
+            </div>
+        </div>  
+        <div class="container-fluid" id="3_9_block" style="display: none;">
+            <div class="col-sm-12">
+                <div class="centerAlignment audioBlock">
+                    <div class="lyricsBlock">
+                        <p class="centerAlignment lyricsText" id="3_9_text"></p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    
+    <div class="container-fluid">
+        <!-- Fury of the Storm -->
+        <div class="col-sm-4">
+            <div class="col-sm-10 col-sm-push-1 centerAlignment itemBlock">
+                <audio id="FuryStorm">
+                    <source src="/media/ljud/FuryoftheStorm.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <button type="button" class="btn-lg btn-success" onclick="playAudio('FuryStorm')">Play</button>
+                <button type="button" class="btn-lg btn-danger" onclick="pauseAudio('FuryStorm')">Pause</button>
+                <p class="centerAlignment audioText">Fury of the Storm</p>
+                <button type="button" class="btn-lg btn-warning" onclick="showLyrics('FuryStorm', '3_10')">Lyrics</button>
+            </div>
+        </div>  
+        <div class="container-fluid" id="3_10_block" style="display: none;">
+            <div class="col-sm-12">
+                <div class="centerAlignment audioBlock">
+                    <div class="lyricsBlock">
+                        <p class="centerAlignment lyricsText" id="3_10_text"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Poka Mig -->
         <div class="col-sm-4">
             <div class="col-sm-10 col-sm-push-1 centerAlignment itemBlock">
@@ -192,9 +239,6 @@
                 <p class="centerAlignment audioText">Poka Mig</p>
             </div>
         </div>
-    </div>
-    
-    <div class="container-fluid">
         <!-- När man festar -->
         <div class="col-sm-4">
             <div class="col-sm-10 col-sm-push-1 centerAlignment itemBlock">
@@ -207,6 +251,9 @@
                 <p class="centerAlignment audioText">När man festar festar man</p>
             </div>
         </div>
+    </div>
+
+    <div class="container-fluid">
         <!-- The Coin -->
         <div class="col-sm-4">
             <div class="col-sm-10 col-sm-push-1 centerAlignment itemBlock">
@@ -219,23 +266,8 @@
                 <p class="centerAlignment audioText">The Coin - ft Drake</p>
             </div>
         </div>
-        <!-- Hello -->
+        <!-- Lakupiippu -->
         <div class="col-sm-4">
-            <div class="col-sm-10 col-sm-push-1 centerAlignment itemBlock">
-                <audio id="Hello">
-                    <source src="/media/ljud/Hello.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
-                <button type="button" class="btn-lg btn-success" onclick="playAudio('Hello')">Play</button>
-                <button type="button" class="btn-lg btn-danger" onclick="pauseAudio('Hello')">Pause</button>
-                <p class="centerAlignment audioText">Hello</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-        <!-- När man festar -->
-        <div class="col-sm-6">
             <div class="col-sm-10 col-sm-push-1 centerAlignment itemBlock">
                 <audio id="Lakupiippu">
                     <source src="/media/ljud/Lakupiippu.wav" type="audio/wav">
@@ -247,7 +279,7 @@
             </div>
         </div>
         <!-- När man festar -->
-        <div class="col-sm-6">
+        <div class="col-sm-4">
             <div class="col-sm-10 col-sm-push-1 centerAlignment itemBlock">
                 <audio id="Noose">
                     <source src="/media/ljud/THeNooseSong.wav" type="audio/wav">
@@ -258,7 +290,6 @@
                 <p class="centerAlignment audioText">The Noose Song</p>
             </div>
         </div>
-        
     </div>
             
     <script src="/playSounds.js"></script>
