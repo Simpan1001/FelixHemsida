@@ -94,3 +94,7 @@
     padding: 2px;
     margin: 10px;
 }
+.dropdownInfo {
+    background-color: rgb(50, 50, 50);
+    list-style-type: none;
+}
